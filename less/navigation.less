@@ -1,23 +1,22 @@
 // Navigation code here
 
 nav {
-    .flex-layout(column, nowrap, center, none);
+    .flex-layout(column, nowrap, center, center);
     width: 100%;
     text-align: center;
     font-size: 1.5em;
     background-color: @nav-bg;
+    padding-bottom: 2%;
     h1 {
         font-size: 3em;
     }
     ul {
-        .flex-layout(row, nowrap, space-between, none);
+        .flex-layout(row, nowrap, space-around, center);
         margin-top: 2%;
-        padding-left: 30%;
-        padding-right: 30%;
-        width: 100%;
+        width: 40%;
 
         @media @phone {
-            padding: 0% 5% 2% 5%;
+            width: 100%;
         }
         li {
             a

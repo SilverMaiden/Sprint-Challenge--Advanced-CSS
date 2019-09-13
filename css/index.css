@@ -165,11 +165,12 @@ nav {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: none;
+  align-items: center;
   width: 100%;
   text-align: center;
   font-size: 1.5em;
   background-color: #F6F6F6;
+  padding-bottom: 2%;
 }
 nav h1 {
   font-size: 3em;
@@ -178,16 +179,14 @@ nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: none;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 2%;
-  padding-left: 30%;
-  padding-right: 30%;
-  width: 100%;
+  width: 40%;
 }
 @media (max-width: 500px) {
   nav ul {
-    padding: 0% 5% 2% 5%;
+    width: 100%;
   }
 }
 nav ul li a {
