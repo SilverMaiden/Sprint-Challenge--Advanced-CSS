@@ -10,19 +10,25 @@ nav {
     h1 {
         font-size: 3em;
     }
+    @media @phone {
+        h1 {
+            font-size: 2.5em;
+        }
+    }
     ul {
         .flex-layout(row, nowrap, space-around, center);
         margin-top: 2%;
-        width: 40%;
+        width: 50%;
 
         @media @phone {
-            width: 100%;
+            width: 80%;
         }
         li {
             a
             {
                 text-decoration: none;
                 font: @river-bend;
+                font-size: 1em;
                 color: inherit;
             }
         }

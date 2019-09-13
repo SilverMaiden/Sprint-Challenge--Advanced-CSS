@@ -8,16 +8,16 @@
     align-items: @align;
 }
 
-.custom-button(@bgc, @color, @width) {
+.custom-button(@bgc, @color, @width, @padding:2%, @padding-left:0, @padding-right:0) {
     background-color: @bgc;
     height: auto;
     color: @color;
     width: @width;
     font: inherit;
     font-size: 2em;
-    padding: 2%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding: @padding;
+    padding-left: @padding-left;
+    padding-right: @padding-right;
     border-radius: 6px;
 
     &:hover {
