@@ -1,1 +1,27 @@
 // Mixins Here
+
+.flex-layout(@direction, @wrap, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    flex-wrap: @wrap;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.custom-button(@bgc, @color, @width, @padding:2%, @padding-left:0, @padding-right:0) {
+    background-color: @bgc;
+    height: auto;
+    color: @color;
+    width: @width;
+    font: inherit;
+    font-size: 2em;
+    padding: @padding;
+    padding-left: @padding-left;
+    padding-right: @padding-right;
+    border-radius: 6px;
+
+    &:hover {
+        background-color: @color;
+        color: @bgc;
+    }
+}
