@@ -2,7 +2,6 @@
 
 nav {
     .flex-layout(column, nowrap, center, none);
-    padding: 1%;
     width: 100%;
     text-align: center;
     font-size: 1.5em;
@@ -13,8 +12,13 @@ nav {
     ul {
         .flex-layout(row, nowrap, space-between, none);
         margin-top: 2%;
-        padding-left: 32%;
-        padding-right: 32%;
+        padding-left: 30%;
+        padding-right: 30%;
+        width: 100%;
+
+        @media @phone {
+            padding: 0% 5% 2% 5%;
+        }
         li {
             a
             {

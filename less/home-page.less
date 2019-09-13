@@ -9,6 +9,7 @@
     }
 
     img {
+        width: 100%;
         border-radius: 5px;
     }
     p {
@@ -21,12 +22,18 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
+        flex-flow: column nowrap !important;
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+          width: 100%;
+      }
     }
   }
 
